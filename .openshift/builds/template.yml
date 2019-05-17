@@ -78,20 +78,19 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/ashutosh-k78/container-pipelines.git
+  value: https://github.com/ashutosh-ibm/ansible_playbook_templates_java.git
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF
   value: "master"
 - description: Path within Git project to build; empty for root project directory.
   name: CONTEXT_DIR
-  value: "basic-tomcat"
 - description: Path within Git project pointing to the pipeline run script
   name: PIPELINE_SCRIPT
   value: Jenkinsfile
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: https://github.com/ashutosh-ibm/dotnetapp.git
+  value: https://github.com/ashutosh-ibm/marketingtemplateapp.git
 - description: Source code branch/tag
   name: APPLICATION_SOURCE_REF
   required: true
