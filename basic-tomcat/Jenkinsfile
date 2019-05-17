@@ -53,7 +53,7 @@ pipeline {
         """
         sh 'cp -rfv . oc-build/'
         sh 'ls oc-build/*'
-        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: "oc-build")
+        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: ".")
       }
     }
 
