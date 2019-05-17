@@ -28,7 +28,6 @@ pipeline {
         git url: "${APPLICATION_SOURCE_REPO}", branch: "${APPLICATION_SOURCE_REF}"
       }
     }
-
     stage('Build') {
       steps {
         sh "mvn -B clean install -DskipTests=true -f ${POM_FILE}"
@@ -51,9 +50,7 @@ pipeline {
             cp -rfv ./${TARGET}/*.\$t oc-build/deployments/ 2> /dev/null || echo "No \$t files"
           done
         """
-        sh 'cp -rfv . oc-build/'
-        sh 'ls oc-build/*'
-        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: "oc-build")
+        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: ".")
       }
     }
 
@@ -77,25 +74,7 @@ pipeline {
         tagImage(sourceImageName: env.APP_NAME, sourceImagePath: env.DEV, toImagePath: env.STAGE)
       }
     }
-
-  
-
-    stage('Promotion gate (Prod)') {
-      steps {
-        script {
-          input message: 'Promote Application to Prod?'
-        }
-      }
-    }
-
-   
-
-    stage('Verify Deployment to Prod') {
-      steps {
-        verifyDeployment(projectName: env.PROD, targetApp: env.APP_NAME)
-      }
-    }
   }
 }
 
-println "Application ${env.APP_NAME} is now in Production!"
+println "Application ${env.APP_NAME} is now in Stage!"
