@@ -28,17 +28,6 @@ pipeline {
         git url: "${APPLICATION_SOURCE_REPO}", branch: "${APPLICATION_SOURCE_REF}"
       }
     }
-    stage('Build') {
-      steps {
-        sh "mvn -B clean install -DskipTests=true -f ${POM_FILE}"
-      }
-    }
-
-    stage('Unit Test') {
-      steps {
-        sh "mvn -B test -f ${POM_FILE}"
-      }
-    }
 
     stage('Build Container Image') {
       steps {
