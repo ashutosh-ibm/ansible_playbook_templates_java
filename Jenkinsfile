@@ -28,7 +28,7 @@ pipeline {
         git url: "${APPLICATION_SOURCE_REPO}", branch: "${APPLICATION_SOURCE_REF}"
       }
     }
-
+    
 
     stage('Build Container Image') {
       steps {
