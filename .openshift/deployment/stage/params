@@ -1,2 +1,2 @@
-APPLICATION_NAME=Tutorialapp
+APPLICATION_NAME=tutorialapp
 ENV=-stage
