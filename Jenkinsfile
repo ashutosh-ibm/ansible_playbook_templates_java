@@ -28,18 +28,11 @@ pipeline {
         git url: "${APPLICATION_SOURCE_REPO}", branch: "${APPLICATION_SOURCE_REF}"
       }
     }
-    
+
 
     stage('Build Container Image') {
       steps {
         sh 'echo $PWD'
-        sh """
-          ls ${TARGET}/*
-          rm -rf oc-build && mkdir -p oc-build/deployments
-          for t in \$(echo "jar;war;ear" | tr ";" "\\n"); do
-            cp -rfv ./${TARGET}/*.\$t oc-build/deployments/ 2> /dev/null || echo "No \$t files"
-          done
-        """
         binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: ".")
       }
     }
