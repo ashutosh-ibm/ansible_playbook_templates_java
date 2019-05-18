@@ -29,6 +29,7 @@ pipeline {
       }
     }
 
+
     stage('Build Container Image') {
       steps {
         sh 'echo $PWD'
