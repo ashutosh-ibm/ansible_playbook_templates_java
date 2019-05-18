@@ -165,7 +165,7 @@ parameters:
   name: HOSTNAME_HTTP
 - description: Path to use for route.
   name: ROUTE_PATH
-  value: /NA
+  value: /
 - description: Topic names
   name: HORNETQ_TOPICS
 - description: HornetQ cluster admin password
