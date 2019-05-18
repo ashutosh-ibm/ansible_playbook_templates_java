@@ -2,22 +2,22 @@
 openshift_cluster_content:
 - object: projectrequest
   content:
-  - name: Tutorialapp-spaces
+  - name: tutorialapp-spaces
     file: "{{ inventory_dir }}/../.openshift/projects/projects.yml"
     action: create
 - object: deployments
   content:
   - name: jenkins
-    namespace: Tutorialapp-build
+    namespace: tutorialapp-build
     template: openshift//jenkins-ephemeral
     params: "{{ inventory_dir }}/../.openshift/deployment/build/params"
-  - name: Tutorialapp-dev
+  - name: tutorialapp-dev
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/dev/params"
-  - name: Tutorialapp-stage
+  - name: tutorialapp-stage
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/stage/params"
-  - name: Tutorialapp-prod
+  - name: tutorialapp-prod
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/prod/params"
 - object: builds
