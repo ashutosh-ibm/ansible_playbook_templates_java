@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: tutorialapp-dev
+    name: Tutorialapp-dev
     creationTimestam: null
-  displayName: tutorialapp - Dev
+  displayName: Tutorialapp - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: tutorialapp-stage
+    name: Tutorialapp-stage
     creationTimestam: null
-  displayName: tutorialapp - Stage
+  displayName: Tutorialapp - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: tutorialapp-prod
+    name: Tutorialapp-prod
     creationTimestam: null
-  displayName: tutorialapp - Prod
+  displayName: Tutorialapp - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: tutorialapp-build
+    name: Tutorialapp-build
     creationTimestam: null
-  displayName: tutorialapp - Build
+  displayName: Tutorialapp - Build
