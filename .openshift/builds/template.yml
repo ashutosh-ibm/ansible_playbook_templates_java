@@ -71,7 +71,7 @@ parameters:
 - description: The name for the application.
   name: APPLICATION_NAME
   required: true
-  value: marketingtemplateapp
+  value: tutorialapp
 - description: The namespace to deploy into
   name: NAMESPACE
   required: true
@@ -90,7 +90,7 @@ parameters:
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: https://github.com/ashutosh-ibm/marketingtemplateapp.git
+  value: https://github.com/ashutosh-ibm/Tutorialapp.git
 - description: Source code branch/tag
   name: APPLICATION_SOURCE_REF
   required: true
