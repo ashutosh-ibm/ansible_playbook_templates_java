@@ -29,6 +29,17 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh "mvn -B clean install -DskipTests=true -f ${POM_FILE}"
+      }
+    }
+
+    stage('Unit Test') {
+      steps {
+        sh "mvn -B test -f ${POM_FILE}"
+      }
+    }
 
     stage('Build Container Image') {
       steps {
