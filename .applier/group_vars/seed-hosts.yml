@@ -9,7 +9,7 @@ openshift_cluster_content:
   content:
   - name: jenkins
     namespace: marketingtemplateapp-build
-    template: openshift//jenkins-ephemeral
+    template: openshift//jenkins-persistent
     params: "{{ inventory_dir }}/../.openshift/deployment/build/params"
   - name: marketingtemplateapp-dev
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
