@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-dev
+    name: creditprocessor-dev
     creationTimestam: null
-  displayName: marketingtemplateapp - Dev
+  displayName: creditprocessor - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-stage
+    name: creditprocessor-stage
     creationTimestam: null
-  displayName: marketingtemplateapp - Stage
+  displayName: creditprocessor - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-prod
+    name: creditprocessor-prod
     creationTimestam: null
-  displayName: marketingtemplateapp - Prod
+  displayName: creditprocessor - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-build
+    name: creditprocessor-build
     creationTimestam: null
-  displayName: marketingtemplateapp - Build
+  displayName: creditprocessor - Build
