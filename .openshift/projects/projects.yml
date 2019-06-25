@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-dev
+    name: accountmanager-dev
     creationTimestam: null
-  displayName: marketingtemplateapp - Dev
+  displayName: accountmanager - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-stage
+    name: accountmanager-stage
     creationTimestam: null
-  displayName: marketingtemplateapp - Stage
+  displayName: accountmanager - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-prod
+    name: accountmanager-prod
     creationTimestam: null
-  displayName: marketingtemplateapp - Prod
+  displayName: accountmanager - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-build
+    name: accountmanager-build
     creationTimestam: null
-  displayName: marketingtemplateapp - Build
+  displayName: accountmanager - Build
