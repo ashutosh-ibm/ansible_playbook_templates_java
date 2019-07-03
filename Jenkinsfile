@@ -15,7 +15,7 @@ openshift.withCluster() {
   env.STAGE = "${APP_NAME}-stage"
   env.PROD = "${APP_NAME}-prod"
   echo "Starting Pipeline for ${APP_NAME}..."
-  echo "Working directory is "${PWD}"
+  
 }
 
 pipeline {
