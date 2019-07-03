@@ -14,7 +14,6 @@ openshift.withCluster() {
   env.DEV = "${APP_NAME}-dev"
   env.STAGE = "${APP_NAME}-stage"
   env.PROD = "${APP_NAME}-prod"
-  env.WDIR="${PWD}"
   echo "Starting Pipeline for ${APP_NAME}..."
   echo "Working directory is "${PWD}"
 }
@@ -46,7 +45,7 @@ pipeline {
     stage('Build Container Image') {
       steps {
         sh 'echo $PWD'
-        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, artifactsDirectoryName: env.WDIR)
+        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, "./")
       }
     }
 
