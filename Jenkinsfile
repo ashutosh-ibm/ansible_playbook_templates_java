@@ -45,7 +45,7 @@ pipeline {
     stage('Build Container Image') {
       steps {
         sh 'echo $PWD'
-        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, "./")
+        binaryBuild(projectName: env.BUILD, buildConfigName: env.APP_NAME, ".")
       }
     }
 
