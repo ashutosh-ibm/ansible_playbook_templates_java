@@ -7,10 +7,7 @@ openshift_cluster_content:
     action: create
 - object: deployments
   content:
-  - name: jenkins
-    namespace: marketingtemplateapp-build
-    template: openshift//jenkins-ephemeral
-    params: "{{ inventory_dir }}/../.openshift/deployment/build/params"
+  
   - name: marketingtemplateapp-dev
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/dev/params"
