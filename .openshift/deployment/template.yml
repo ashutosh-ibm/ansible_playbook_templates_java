@@ -148,7 +148,7 @@ parameters:
 - description: The name for the application.
   name: APPLICATION_NAME
   required: true
-  value: marketingtemplateapp
+  value: accountmanager
 - description: The environment
   name: ENV
   required: true
@@ -159,13 +159,13 @@ parameters:
 - description: Namespace of service account that can deploy to this project
   name: SA_NAMESPACE
   required: true
-  value: marketingtemplateapp-build
+  value: accountmanager-build
 - description: 'Custom hostname for http service route.  Leave blank for default hostname,
     e.g.: <application-name>-<project>.<default-domain-suffix>'
   name: HOSTNAME_HTTP
 - description: Path to use for route.
   name: ROUTE_PATH
-  value: /marketingtemplateapp
+  value: /accountmanager
 - description: Topic names
   name: HORNETQ_TOPICS
 - description: HornetQ cluster admin password
