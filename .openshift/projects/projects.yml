@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: robobank-dev
+    name: marketingtemplateapp-dev
     creationTimestam: null
-  displayName: robobank - Dev
+  displayName: marketingtemplateapp - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: robobank-stage
+    name: marketingtemplateapp-stage
     creationTimestam: null
-  displayName: robobank - Stage
+  displayName: marketingtemplateapp - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: robobank-prod
+    name: marketingtemplateapp-prod
     creationTimestam: null
-  displayName: robobank - Prod
+  displayName: marketingtemplateapp - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: robobank-build
+    name: marketingtemplateapp-build
     creationTimestam: null
-  displayName: robobank - Build
+  displayName: marketingtemplateapp - Build
