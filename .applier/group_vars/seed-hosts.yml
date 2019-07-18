@@ -2,22 +2,22 @@
 openshift_cluster_content:
 - object: projectrequest
   content:
-  - name: marketingtemplateapp-spaces
+  - name: accountmanager-spaces
     file: "{{ inventory_dir }}/../.openshift/projects/projects.yml"
     action: create
 - object: deployments
   content:
   - name: jenkins
-    namespace: marketingtemplateapp-build
+    namespace: accountmanager-build
     template: openshift//jenkins-ephemeral
     params: "{{ inventory_dir }}/../.openshift/deployment/build/params"
-  - name: marketingtemplateapp-dev
+  - name: accountmanager-dev
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/dev/params"
-  - name: marketingtemplateapp-stage
+  - name: accountmanager-stage
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/stage/params"
-  - name: marketingtemplateapp-prod
+  - name: accountmanager-prod
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/prod/params"
 - object: builds
