@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-dev
+    name: onesource-dev
     creationTimestam: null
-  displayName: marketingtemplateapp - Dev
+  displayName: onesource - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-stage
+    name: onesource-stage
     creationTimestam: null
-  displayName: marketingtemplateapp - Stage
+  displayName: onesource - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-prod
+    name: onesource-prod
     creationTimestam: null
-  displayName: marketingtemplateapp - Prod
+  displayName: onesource - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: marketingtemplateapp-build
+    name: onesource-build
     creationTimestam: null
-  displayName: marketingtemplateapp - Build
+  displayName: onesource - Build
