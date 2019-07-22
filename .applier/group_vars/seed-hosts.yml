@@ -2,22 +2,22 @@
 openshift_cluster_content:
 - object: projectrequest
   content:
-  - name: onesource-spaces
+  - name: marketingtemplateapp-spaces
     file: "{{ inventory_dir }}/../.openshift/projects/projects.yml"
     action: create
 - object: deployments
   content:
   - name: jenkins
-    namespace: onesource-build
+    namespace: marketingtemplateapp-build
     template: openshift//jenkins-ephemeral
     params: "{{ inventory_dir }}/../.openshift/deployment/build/params"
-  - name: onesource-dev
+  - name: marketingtemplateapp-dev
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/dev/params"
-  - name: onesource-stage
+  - name: marketingtemplateapp-stage
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/stage/params"
-  - name: onesource-prod
+  - name: marketingtemplateapp-prod
     template: "{{ inventory_dir }}/../.openshift/deployment/template.yml"
     params: "{{ inventory_dir }}/../.openshift/deployment/prod/params"
 - object: builds
