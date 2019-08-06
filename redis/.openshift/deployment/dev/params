@@ -1,0 +1,2 @@
+APPLICATION_NAME=redis-service
+ENV=-dev
