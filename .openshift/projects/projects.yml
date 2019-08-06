@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: liberty-redis-dev
+    name: marketingtemplateapp-dev
     creationTimestam: null
-  displayName: liberty-redis - Dev
+  displayName: marketingtemplateapp - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: liberty-redis-stage
+    name: marketingtemplateapp-stage
     creationTimestam: null
-  displayName: liberty-redis - Stage
+  displayName: marketingtemplateapp - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: liberty-redis-prod
+    name: marketingtemplateapp-prod
     creationTimestam: null
-  displayName: liberty-redis - Prod
+  displayName: marketingtemplateapp - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: liberty-redis-build
+    name: marketingtemplateapp-build
     creationTimestam: null
-  displayName: liberty-redis - Build
+  displayName: marketingtemplateapp - Build
