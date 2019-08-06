@@ -4,24 +4,24 @@ items:
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: creditprocessor-dev
+    name: liberty-redis-dev
     creationTimestam: null
-  displayName: creditprocessor - Dev
+  displayName: liberty-redis - Dev
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: creditprocessor-stage
+    name: liberty-redis-stage
     creationTimestam: null
-  displayName: creditprocessor - Stage
+  displayName: liberty-redis - Stage
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: creditprocessor-prod
+    name: liberty-redis-prod
     creationTimestam: null
-  displayName: creditprocessor - Prod
+  displayName: liberty-redis - Prod
 - kind: ProjectRequest
   apiVersion: v1
   metadata:
-    name: creditprocessor-build
+    name: liberty-redis-build
     creationTimestam: null
-  displayName: creditprocessor - Build
+  displayName: liberty-redis - Build
