@@ -71,7 +71,7 @@ parameters:
 - description: The name for the application.
   name: APPLICATION_NAME
   required: true
-  value: creditprocessor
+  value: liberty-redis
 - description: The namespace to deploy into
   name: NAMESPACE
   required: true
@@ -90,7 +90,7 @@ parameters:
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: https://github.com/ashutosh-ibm/creditprocessor.git
+  value: https://github.com/ashutosh-ibm/liberty-redis.git
 - description: Source code branch/tag
   name: APPLICATION_SOURCE_REF
   required: true
@@ -98,7 +98,7 @@ parameters:
 - description: Directory where POM file will be
   name: APPLICATION_CONTEXT_DIR
   required: true
-  value: webapp
+  value: .
 - description: GitHub trigger secret
   from: '[a-zA-Z0-9]{8}'
   generate: expression
