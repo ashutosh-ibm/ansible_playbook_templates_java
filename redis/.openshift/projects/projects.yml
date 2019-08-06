@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: List
+items:
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: redis-service-dev
+    creationTimestam: null
+  displayName: redis-service - Dev
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: redis-service-stage
+    creationTimestam: null
+  displayName: redis-service - Stage
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: redis-service-prod
+    creationTimestam: null
+  displayName: redis-service - Prod
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: redis-service-build
+    creationTimestam: null
+  displayName: redis-service - Build
