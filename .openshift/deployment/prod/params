@@ -1,2 +1,2 @@
-APPLICATION_NAME=creditprocessor
+APPLICATION_NAME=liberty-redis
 ENV=-prod
