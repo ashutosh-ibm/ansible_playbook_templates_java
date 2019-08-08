@@ -80,7 +80,7 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/ashutosh-ibm/ansible_playbook_templates_java.git
+  value: git@github.ibm.com:ngt/ansible_playbook_templates_java.git
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF
   value: "master"
@@ -92,7 +92,7 @@ parameters:
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: https://github.com/ashutosh-ibm/liberty-redis.git
+  value: git@github.ibm.com:ngt/liberty-redis.git
 - description: Source code branch/tag
   name: APPLICATION_SOURCE_REF
   required: true
