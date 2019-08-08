@@ -24,7 +24,7 @@ objects:
         uri: ${SOURCE_REPOSITORY_URL}
         ref: ${SOURCE_REPOSITORY_REF}
       sourceSecret:
-        name: "default (liberty-redis-build-nextgen-ssh)"
+        name: "default (liberty-redis-build-nextgen)"
       contextDir: ${CONTEXT_DIR}
     triggers:
     - type: "GitHub"
