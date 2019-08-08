@@ -23,6 +23,8 @@ objects:
       git:
         uri: ${SOURCE_REPOSITORY_URL}
         ref: ${SOURCE_REPOSITORY_REF}
+      sourceSecret:
+        name: "nextgen-ssh"
       contextDir: ${CONTEXT_DIR}
     triggers:
     - type: "GitHub"
