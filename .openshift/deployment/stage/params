@@ -1,2 +1,2 @@
-APPLICATION_NAME=liberty-redis
+APPLICATION_NAME=creditprocessor
 ENV=-stage
