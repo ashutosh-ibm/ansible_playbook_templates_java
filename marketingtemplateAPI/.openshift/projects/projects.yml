@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: List
+items:
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: marketingtemplateapp-dev
+    creationTimestam: null
+  displayName: marketingtemplateapp - Dev
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: marketingtemplateapp-stage
+    creationTimestam: null
+  displayName: marketingtemplateapp - Stage
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: marketingtemplateapp-prod
+    creationTimestam: null
+  displayName: marketingtemplateapp - Prod
+- kind: ProjectRequest
+  apiVersion: v1
+  metadata:
+    name: marketingtemplateapp-build
+    creationTimestam: null
+  displayName: marketingtemplateapp - Build
