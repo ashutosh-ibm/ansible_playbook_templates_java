@@ -23,8 +23,6 @@ objects:
       git:
         uri: ${SOURCE_REPOSITORY_URL}
         ref: ${SOURCE_REPOSITORY_REF}
-      sourceSecret:
-        name: "ssh-secret"
       contextDir: ${CONTEXT_DIR}
     triggers:
     - type: "GitHub"
@@ -80,7 +78,7 @@ parameters:
 - description: Git source URI for application
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: git@github.ibm.com/ngt/ansible_playbook_templates_java.git
+  value: https://github.com/ashutosh-ibm/ansible_playbook_templates_java.git
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF
   value: "master"
@@ -92,7 +90,7 @@ parameters:
 - description: Source code repo for demo app
   name: APPLICATION_SOURCE_REPO
   required: true
-  value: git@github.ibm.com:ngt/sample-tomcat.git
+  value: https://github.com/ashutosh-ibm/marketingtemplateapp.git
 - description: Source code branch/tag
   name: APPLICATION_SOURCE_REF
   required: true
